@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.terrence</groupId>
-	<artifactId>testapp</artifactId>
+	<artifactId>cfenv-watson-natural-language-understanding-test-only</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>testapp</name>
-	<description>Demo project for Spring Boot</description>
+	<name>cfenv-watson-natural-language-understanding-test-only</name>
+	<description>A test app using the CfEnvProcessor Implementation for Watson Natural Language Understanding</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -29,14 +29,14 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.github.tnixa</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-			<version>-SNAPSHOT</version>
+			<groupId>com.ibm.watson.developer_cloud</groupId>
+			<artifactId>watson-spring-boot-starter</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>io.pivotal.cfenv</groupId>
-			<artifactId>java-cfenv-boot</artifactId>
-			<version>1.0.0.RELEASE</version>
+			<groupId>com.github.tnixa</groupId>
+			<artifactId>cfenv-processor-watson-natural-language-understanding</artifactId>
+			<version>-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -47,14 +47,14 @@
 
 	<repositories>
 		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-		<repository>
 			<id>ibm-cloud</id>
 			<url>https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo</url>
 		</repository>
-    </repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
